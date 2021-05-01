@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 62.50%; }
+
+body {
+  font-size: 1.6rem; }
+
+.logo {
+  font-size: 4rem;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.5px; }
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(to right, #ff8f70, #ff3d54);
+  height: 60rem; }
+  .hero .into-background {
+    position: relative; }
+    .hero .into-background img {
+      position: absolute;
+      width: 300rem;
+      height: 300rem;
+      top: -134rem;
+      right: -120rem; }
+  .hero .header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 111rem;
+    margin: 0 auto;
+    margin-top: 5.7rem;
+    position: relative;
+    z-index: 10; }
+  .hero .nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap; }
+    .hero .nav .dropdown {
+      display: none; }

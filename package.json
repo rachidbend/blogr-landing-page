@@ -1,0 +1,22 @@
+{
+  "name": "blogr-landing-page-main",
+  "version": "1.0.0",
+  "description": "![Design preview for the Blogr landing page coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w sass/ -o dist/css/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rachidbend/blogr-landing-page.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rachidbend/blogr-landing-page/issues"
+  },
+  "homepage": "https://github.com/rachidbend/blogr-landing-page#readme",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
