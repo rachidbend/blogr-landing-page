@@ -1,0 +1,12 @@
+.section-hero {
+  text-align: center;
+  margin-top: 5.6rem;
+
+  &__text {
+    color: var(--color-neutral-white);
+    font-size: 1.8rem;
+    font-weight: 300;
+    font-family: var(--font-family-overpass);
+    opacity: 0.8;
+  }
+}

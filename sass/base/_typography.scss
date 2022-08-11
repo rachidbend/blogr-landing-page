@@ -1,0 +1,25 @@
+// font-family: 'Overpass', sans-serif;
+// font-family: 'Ubuntu', sans-serif;
+
+:root {
+  --font-family-overpass: "Overpass", sans-serif;
+  // Weights: 300, 600
+  --font-family-ubuntu: "Ubuntu", sans-serif;
+  // - Weights: 400, 500, 700
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.heading {
+  font-family: var(--font-family-overpass);
+  line-height: 1.2;
+  letter-spacing: -1.6px;
+}
+
+.heading--primary {
+  color: var(--color-neutral-white);
+  font-size: 3.6rem;
+  margin-bottom: 1.4rem;
+}
