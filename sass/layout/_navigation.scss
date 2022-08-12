@@ -114,3 +114,12 @@
 }
 .nav__link--sign {
 }
+
+.nav--footer {
+  .nav__list--tab {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
