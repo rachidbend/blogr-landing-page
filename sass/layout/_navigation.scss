@@ -10,19 +10,72 @@
 }
 .btn-nav--close {
   display: none;
+  transform: translate(-11%, -3%);
+}
+
+.nav-open .btn-nav--open {
+  display: none;
+}
+.nav-open .btn-nav--close {
+  display: block;
 }
 
 .nav--main {
+  font-size: 1.9rem;
+  font-family: var(--font-family-overpass);
+  font-weight: 600;
+  color: var(--color-primary-headings);
+
+  position: absolute;
+  background-color: var(--color-neutral-white);
+  // getting it as close as i can to the original design
+  left: 2.4rem;
+  right: 2.7rem;
+  top: 12.5rem;
+  border-radius: 0.6rem;
+  box-shadow: 0 1rem 4rem rgba($color: hsl(240, 10%, 16%), $alpha: 0.26);
+  // Hiding the nav
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: all ease-out 400ms;
+
+  z-index: 10;
+}
+// when mobile nav is open
+.nav-open .nav--main {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.nav__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 3.2rem 4rem;
+  width: 100%;
+  gap: 2rem;
+}
+.nav__link:link,
+.nav__link:visited {
+  text-decoration: none;
+  color: var(--color-primary-headings);
+}
+
+.nav__list--tab {
+  list-style: none;
+  background-color: rgba($color: hsl(240, 2%, 79%), $alpha: 0.3);
   display: none;
 }
-.nav__list {
+
+.tab-open {
+  display: flex;
+  flex-direction: column;
 }
-.nav__link {
-}
-.nav__link--open {
-}
-.nav__list--tab {
-}
+
 .nav__link--tab {
 }
 

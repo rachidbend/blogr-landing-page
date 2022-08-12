@@ -20,6 +20,7 @@
     />
 
     <link rel="stylesheet" href="dist/css/main.css" />
+    <script defer src="js/script.js"></script>
 
     <title>Frontend Mentor | [Blogr]</title>
 
@@ -29,7 +30,7 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style> -->
   </head>
-  <body>
+  <body class="nav-open">
     <section class="head">
       <header class="header">
         <div class="container">
@@ -50,7 +51,7 @@
           </button>
           <nav class="nav nav--main">
             <ul class="nav__list">
-              <!-- first li -->
+              <!-- first tab -->
               <li>
                 <a href="#" class="nav__link nav__link--open">Product</a>
                 <ul class="nav__list--tab">
@@ -73,7 +74,7 @@
                   </li>
                 </ul>
               </li>
-              <!-- second li -->
+              <!-- second tab -->
               <li>
                 <a href="#" class="nav__link nav__link--open">Company</a>
                 <ul class="nav__list--tab">
@@ -91,10 +92,10 @@
                   </li>
                 </ul>
               </li>
-              <!-- third li -->
+              <!-- third tab -->
               <li>
                 <a href="#" class="nav__link nav__link--open">Connect</a>
-                <ul class="nav__list--tab">
+                <ul class="nav__list--tab tab-open">
                   <li>
                     <a href="" class="nav__link nav__link--tab">Contact</a>
                   </li>
