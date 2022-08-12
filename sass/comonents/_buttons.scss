@@ -53,8 +53,15 @@
 .btn--login:visited {
   font-size: 1.8rem;
   font-family: var(--font-family-overpass);
-  color: var(--color-primary-headings);
+  color: var(--color-primary-link);
+
+  transition: color ease-out 300ms;
 }
+.btn--login:hover,
+.btn--login:visited {
+  color: var(--color-primary-link-hover);
+}
+
 .btn--sign:link,
 .btn--sign:visited {
   display: inline-block;

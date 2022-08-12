@@ -62,16 +62,23 @@
   // width: 100%;
   gap: 3rem;
 
-  border-bottom: 1px solid rgba(31, 63, 91, 0.3);
+  border-bottom: 1px solid rgba(31, 63, 91, 0.2);
 }
 .nav__link:link,
 .nav__link:visited {
   text-decoration: none;
-  color: var(--color-primary-headings);
+  color: var(--color-primary-link);
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.6rem;
+
+  transition: color ease-out 300ms;
+}
+
+.nav__link:hover,
+.nav__link:active {
+  color: var(--color-primary-link-hover);
 }
 
 .nav__list--tab {
@@ -96,7 +103,9 @@
   flex-direction: column;
 }
 
-.nav__link--tab {
+.nav__link--tab:link,
+.nav__link--tab:visited {
+  color: var(--color-primary-link-hover);
 }
 
 .nav__login {
