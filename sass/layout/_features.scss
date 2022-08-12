@@ -24,6 +24,12 @@
     line-height: 1.64;
     margin-left: 0.4rem;
   }
+
+  // fixing the spacing in the last features group
+  .heading--small-margin {
+    margin-bottom: 2.8rem;
+    margin-top: 4rem;
+  }
 }
 
 .feature-speed {
@@ -31,6 +37,7 @@
   border-bottom-left-radius: 10rem;
   text-align: center;
   margin-top: 26.8rem;
+  margin-bottom: 6.4rem;
 
   // margin-top: -10rem;
   background-image: url("../../images/bg-pattern-circles.svg"),
@@ -46,6 +53,7 @@
     font-size: 3.8rem;
     line-height: 1.3;
     margin-left: 0;
+    letter-spacing: -0.5px;
   }
 
   .feature__text {
@@ -53,9 +61,10 @@
     font-size: 1.6rem;
     font-weight: 300;
     line-height: 1.8;
-    padding: 0 1rem;
+    padding: 0 0.6rem;
     padding-bottom: 11rem;
     margin-left: 0;
+    letter-spacing: 0.5px;
   }
   position: relative;
 }
@@ -72,5 +81,5 @@
   height: auto;
 
   position: absolute;
-  top: -40%;
+  top: -30%;
 }
