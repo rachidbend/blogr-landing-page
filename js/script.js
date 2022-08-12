@@ -23,3 +23,13 @@ navTabLinkEls.forEach((link) => {
     arrowEl.classList.toggle("arrow-open");
   });
 });
+
+// closing nav when body is clicked
+bodyEl.addEventListener("click", (e) => {
+  // if the target is not the nav button or nav itself, then close the nav
+  if (!e.target.closest(".nav--main") && !e.target.closest(".btn-nav")) {
+    if (bodyEl.classList.contains("nav-open")) {
+      bodyEl.classList.remove("nav-open");
+    }
+  }
+});
