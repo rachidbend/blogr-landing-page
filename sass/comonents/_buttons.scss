@@ -38,3 +38,41 @@
   color: var(--color-primary-cta);
   background-color: var(--color-neutral-white);
 }
+
+.nav__login {
+  margin-top: 2rem;
+  margin-bottom: 3.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-direction: column;
+  font-family: var(--font-family-overpass);
+}
+
+.btn--login:link,
+.btn--login:visited {
+  font-size: 1.8rem;
+  font-family: var(--font-family-overpass);
+  color: var(--color-primary-headings);
+}
+.btn--sign:link,
+.btn--sign:visited {
+  display: inline-block;
+  font-size: 1.6rem;
+  color: var(--color-neutral-white);
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 143, 112, 1),
+    rgba(255, 61, 84, 1)
+  );
+  padding: 1.5rem 4rem;
+  outline: 1px solid transparent;
+  outline-offset: -1px;
+}
+
+.btn--sign:hover,
+.btn--sign:active {
+  outline: 1px solid var(--color-primary-cta);
+  background-image: linear-gradient(to right, #fff, #fff);
+  color: var(--color-primary-cta);
+}

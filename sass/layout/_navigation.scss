@@ -34,7 +34,7 @@
   right: 2.7rem;
   top: 12.5rem;
   border-radius: 0.6rem;
-  box-shadow: 0 1rem 4rem rgba($color: hsl(240, 10%, 16%), $alpha: 0.26);
+  box-shadow: 0 2²rem 4rem rgba($color: hsl(240, 10%, 16%), $alpha: 0.26);
   // Hiding the nav
   opacity: 0;
   visibility: hidden;
@@ -56,7 +56,7 @@
   flex-direction: column;
   text-align: center;
   margin: 0 2.4rem;
-  margin-bottom: 3rem;
+  // margin-bottom: 3rem;
   padding: 3.2rem 0;
   padding-bottom: 2.4rem;
   // width: 100%;
@@ -81,6 +81,7 @@
   display: none;
   margin-top: 2rem;
   padding: 2.6rem 0;
+  padding-bottom: 2.2rem;
   flex-direction: column;
   border-radius: 0.4rem;
   gap: 2rem;
