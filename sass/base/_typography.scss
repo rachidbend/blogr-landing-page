@@ -23,3 +23,22 @@ html {
   font-size: 3.6rem;
   margin-bottom: 1.4rem;
 }
+
+.heading--secondary {
+  color: var(--color-primary-headings);
+  font-size: 2.8rem;
+  margin-top: 10.4rem;
+  letter-spacing: -1.1px;
+  font-weight: 600;
+  margin-bottom: 4.4rem;
+}
+
+.heading--tertiary {
+  color: var(--color-primary-headings);
+  font-size: 2.8rem;
+  margin-top: 5.1rem;
+  line-height: 1.14;
+  letter-spacing: -0.2px;
+  margin-bottom: 1.5rem;
+  margin-left: 1rem;
+}

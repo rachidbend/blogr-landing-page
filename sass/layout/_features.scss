@@ -1,4 +1,27 @@
+.section-features {
+  text-align: center;
+}
+
+.features__img {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .features__img img {
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 100%;
+  margin: 0 auto;
+  // transform: translateX(-40px);
+}
+
+.feature {
+  &__text {
+    font-family: var(--font-family-overpass);
+    font-weight: 300;
+    font-size: 1.7rem;
+    color: var(--color-neutral-body-copy);
+    line-height: 1.64;
+    margin-left: 0.4rem;
+  }
 }
