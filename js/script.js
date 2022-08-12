@@ -12,14 +12,14 @@ btnNavEl.addEventListener("click", (e) => {
 // making nav tabs functional
 
 const navTabLinkEls = document.querySelectorAll(".nav__link--open");
-console.log(navTabLinkEls);
 
 navTabLinkEls.forEach((link) => {
   link.addEventListener("click", (e) => {
     //  prevent link from refreshing page
     e.preventDefault();
+    const arrowEl = e.target.lastChild;
     const tab = e.target.nextElementSibling;
     tab.classList.toggle("tab-open");
-    console.log(tab);
+    arrowEl.classList.toggle("arrow-open");
   });
 });
