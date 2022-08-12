@@ -108,14 +108,10 @@
   color: var(--color-primary-link-hover);
 }
 
-.nav__login {
-}
-.nav__link--login {
-}
-.nav__link--sign {
-}
-
 .nav--footer {
+  .nav__link {
+    color: var(--color-neutral-white);
+  }
   .nav__list--tab {
     display: flex;
     flex-direction: column;
