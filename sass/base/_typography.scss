@@ -1,6 +1,13 @@
 // font-family: 'Overpass', sans-serif;
 // font-family: 'Ubuntu', sans-serif;
 
+$media--small-phones: 28.75em;
+$media--large-phones: 44em;
+$media--tablet: 59em;
+$media--tablet-landscape: 75em;
+$media--tesktop: 1400px;
+$media--large-desktop: 100em;
+
 :root {
   --font-family-overpass: "Overpass", sans-serif;
   // Weights: 300, 600
@@ -41,9 +48,26 @@ html {
   letter-spacing: -0.2px;
   margin-bottom: 1.5rem;
   margin-left: 1rem;
+
+  @media (min-width: $media--tablet) {
+    margin-bottom: 4rem;
+  }
 }
 
 .heading--margin-bottom-sm {
   margin-top: 4.4rem;
   margin-bottom: 2.4rem;
+
+  @media (min-width: $media--tablet) {
+    margin-bottom: 4rem;
+  }
+}
+
+.heading--small-margin {
+  margin-bottom: 2.8rem;
+  margin-top: 4rem;
+
+  @media (min-width: $media--tablet) {
+    margin-bottom: 4rem;
+  }
 }

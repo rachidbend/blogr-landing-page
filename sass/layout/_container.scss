@@ -17,8 +17,8 @@ $media--large-desktop: 100em;
   }
 
   @media (min-width: $media--tablet) {
-    // max-width: 70rem;
+    max-width: 70rem;
     margin: 0 auto;
-    padding: 0 4rem;
+    // padding: 0 4rem;
   }
 }

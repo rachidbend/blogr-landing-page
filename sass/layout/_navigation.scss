@@ -133,7 +133,7 @@ $media--large-desktop: 100em;
 
     @media (min-width: $media--tablet) {
       display: grid;
-      gap: 6rem;
+      gap: 10rem;
       margin: 0 auto;
       width: 60%;
     }
