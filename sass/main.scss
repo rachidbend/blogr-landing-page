@@ -1,4 +1,12 @@
+$media--small-phones: 28.75em;
+$media--large-phones: 44em;
+$media--tablet: 59em;
+$media--tablet-landscape: 75em;
+$media--tesktop: 1400px;
+$media--large-desktop: 100em;
+
 // utilities
+@use "utilities/variables";
 @use "utilities/colors";
 @use "utilities/mixins";
 
@@ -18,3 +26,48 @@
 @use "layout/hero";
 @use "layout/features";
 @use "layout/footer";
+
+// 460px   28.75em  small phones
+// 704px   44em     large phones
+// 944px   59em     tablets
+// 1200px  75em     tablet landscape
+// 1600px  100em    large desktop
+
+$media--small-phones: 28.75em;
+$media--large-phones: 44em;
+$media--tablet: 59em;
+$media--tablet-landscape: 75em;
+$media--tesktop: 1400px;
+$media--large-desktop: 100em;
+
+/*
+
+ @media(min-width: var($media--small-phones)) {
+  
+ }
+
+
+  @media(min-width: var($media--large-phones)) {
+  
+ }
+
+
+  @media(min-width: var($media--tablet)) {
+  
+ }
+
+
+  @media(min-width: var($media--tablet-landscape)) {
+  
+ }
+
+
+  @media(min-width: var($media--tesktop)) {
+  
+ }
+
+ 
+  @media(min-width: var($media--large-desktop)) {
+  
+ }
+ */

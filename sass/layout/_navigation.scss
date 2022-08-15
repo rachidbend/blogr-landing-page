@@ -1,3 +1,10 @@
+$media--small-phones: 28.75em;
+$media--large-phones: 44em;
+$media--tablet: 59em;
+$media--tablet-landscape: 75em;
+$media--tesktop: 1400px;
+$media--large-desktop: 100em;
+
 .nav {
 }
 .btn-nav {
@@ -42,6 +49,11 @@
   transition: all ease-out 400ms;
 
   z-index: 10;
+
+  @media (min-width: $media--small-phones) {
+    right: 2.7rem;
+    left: auto;
+  }
 }
 // when mobile nav is open
 .nav-open .nav--main {
@@ -63,6 +75,10 @@
   gap: 3rem;
 
   border-bottom: 1px solid rgba(31, 63, 91, 0.2);
+
+  @media (min-width: $media--small-phones) {
+    width: 30rem;
+  }
 }
 .nav__link:link,
 .nav__link:visited {
