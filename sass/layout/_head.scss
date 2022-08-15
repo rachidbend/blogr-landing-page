@@ -1,3 +1,10 @@
+$media--small-phones: 28.75em;
+$media--large-phones: 44em;
+$media--tablet: 59em;
+$media--tablet-landscape: 75em;
+$media--tesktop: 1400px;
+$media--large-desktop: 100em;
+
 .head {
   background-image: url(../../images/bg-pattern-intro-mobile.svg),
     var(--color-gradiant-red);
@@ -5,4 +12,15 @@
 
   background-position: 35.5% 33%;
   background-repeat: no-repeat;
+
+  @media (min-width: $media--large-phones) {
+    background-size: 200%;
+  }
+
+  .container {
+    @media (min-width: $media--large-phones) {
+      max-width: 100%;
+      padding: 0 4rem;
+    }
+  }
 }

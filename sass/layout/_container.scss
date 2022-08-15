@@ -1,3 +1,24 @@
+$media--small-phones: 28.75em;
+$media--large-phones: 44em;
+$media--tablet: 59em;
+$media--tablet-landscape: 75em;
+$media--tesktop: 1400px;
+$media--large-desktop: 100em;
+
 .container {
   padding: 0 2.4rem;
+
+  @media (min-width: $media--small-phones) {
+    padding: 0 4rem;
+  }
+
+  @media (min-width: $media--large-phones) {
+    padding: 0 10rem;
+  }
+
+  @media (min-width: $media--tablet) {
+    // max-width: 70rem;
+    margin: 0 auto;
+    padding: 0 4rem;
+  }
 }

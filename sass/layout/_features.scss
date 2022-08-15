@@ -7,6 +7,7 @@ $media--large-desktop: 100em;
 
 .section-features {
   text-align: center;
+  position: relative;
 }
 
 .features__img {
@@ -76,6 +77,10 @@ $media--large-desktop: 100em;
     line-height: 1.3;
     margin-left: 0;
     letter-spacing: -0.5px;
+
+    @media (min-width: $media--tablet) {
+      margin-top: 11rem;
+    }
   }
 
   .feature__text {
@@ -102,4 +107,34 @@ $media--large-desktop: 100em;
   display: inline-block;
   position: absolute;
   top: -30%;
+
+  @media (min-width: $media--small-phones) {
+    width: 41rem;
+    top: -34%;
+  }
+
+  @media (min-width: $media--tablet) {
+    width: 52rem;
+    height: auto;
+    position: absolute;
+    top: auto;
+  }
+}
+
+.feature__img--side {
+  display: none;
+
+  @media (min-width: $media--tablet) {
+    display: block;
+    width: 80rem;
+    height: auto;
+    position: absolute;
+    left: -20rem;
+  }
+}
+
+.features__img {
+  @media (min-width: $media--tablet) {
+    display: none;
+  }
 }

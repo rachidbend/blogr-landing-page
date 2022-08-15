@@ -1,3 +1,10 @@
+$media--small-phones: 28.75em;
+$media--large-phones: 44em;
+$media--tablet: 59em;
+$media--tablet-landscape: 75em;
+$media--tesktop: 1400px;
+$media--large-desktop: 100em;
+
 .grid {
   display: grid;
 }
@@ -5,10 +12,18 @@
 .grid--2-cols {
   grid-template-columns: 1fr;
   column-gap: 3.6rem;
+
+  @media (min-width: $media--tablet) {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .grid--3-cols {
   grid-template-columns: 1fr;
+
+  @media (min-width: $media--tablet) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .grid--footer {
