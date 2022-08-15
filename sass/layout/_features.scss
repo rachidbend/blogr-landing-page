@@ -40,12 +40,22 @@
   margin-bottom: 6.4rem;
 
   // margin-top: -10rem;
-  background-image: url("../../images/bg-pattern-circles.svg"),
-    var(--color-gradiant-blue);
+  background-image: var(--color-gradiant-blue);
   // background-position: -40% -1000%;
 
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
+  position: relative;
+
+  .background--speed {
+    background-image: url("../../images/bg-pattern-circles.svg");
+    border-top-right-radius: 10rem;
+    border-bottom-left-radius: 10rem;
+    background-position-x: center;
+    background-position-y: -26rem;
+    background-size: 160%;
+    background-repeat: no-repeat;
+  }
 
   .heading {
     color: var(--color-neutral-white);
@@ -66,20 +76,18 @@
     margin-left: 0;
     letter-spacing: 0.5px;
   }
-  position: relative;
 }
 
 .speed__img {
-  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .speed__img img {
-  width: 38rem;
+  width: 37rem;
   height: auto;
-
+  display: inline-block;
   position: absolute;
   top: -30%;
 }
