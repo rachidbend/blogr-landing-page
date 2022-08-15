@@ -108,14 +108,45 @@
   color: var(--color-primary-link-hover);
 }
 
+// FOOTER NAV
+
 .nav--footer {
-  .nav__link {
-    color: var(--color-neutral-white);
+  .nav__list {
+    border: none;
   }
+
+  .nav__link--open:link,
+  .nav__link--open:visited {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--color-neutral-white);
+    font-family: var(--font-family-overpass);
+  }
+
+  .nav__link--tab:link,
+  .nav__link--tab:visited {
+    color: var(--color-neutral-gray--light);
+    font-size: 1.8rem;
+    font-family: var(--font-family-ubuntu);
+
+    // to make sure border is animated
+    border-bottom: 1px solid transparent;
+    margin-bottom: -1px;
+    transition: all ease-in-out 400ms;
+  }
+
+  .nav__link--tab:hover,
+  .nav__link--tab:active {
+    border-bottom: 1px solid var(--color-neutral-white);
+  }
+
   .nav__list--tab {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: none;
+    margin-top: 0.4rem;
+    gap: 1.2rem;
   }
 }
