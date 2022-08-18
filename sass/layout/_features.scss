@@ -5,9 +5,29 @@ $media--tablet-landscape: 75em;
 $media--tesktop: 1400px;
 $media--large-desktop: 100em;
 
+// fixing feature image making body too wide
+html {
+  @media (min-width: $media--tablet-landscape) {
+    width: 100vw;
+    overflow-x: hidden;
+  }
+}
+
 .section-features {
   text-align: center;
   position: relative;
+}
+// .section-features--first {
+//   @media (min-width: $media--tablet-landscape) {
+//     overflow-x: hidden;
+//     overflow-y: visible;
+//   }
+// }
+
+.section-features--second {
+  @media (min-width: $media--tablet-landscape) {
+    margin-bottom: 22.5rem;
+  }
 }
 
 .features__img {
@@ -31,10 +51,66 @@ $media--large-desktop: 100em;
     color: var(--color-neutral-body-copy);
     line-height: 1.64;
     margin-left: 0.4rem;
+
+    @media (min-width: $media--tablet-landscape) {
+      margin-left: 0;
+    }
   }
 
-  // fixing the spacing in the last features group
+  @media (min-width: $media--tablet-landscape) {
+    text-align: left;
+    margin-bottom: 7.7rem;
+  }
 }
+
+.features__content--1 {
+  @media (min-width: $media--tablet-landscape) {
+    grid-column: 1;
+    grid-row: 1;
+  }
+}
+
+.features__img {
+  @media (min-width: $media--tablet-landscape) {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.features__content--2 {
+  @media (min-width: $media--tablet-landscape) {
+    transform: translateX(-0.5rem);
+  }
+}
+
+// *******************
+// FEATURES SIDE IMAGES
+// ********************
+
+.features__img-desktop {
+  display: none;
+  position: absolute;
+
+  @media (min-width: $media--tablet-landscape) {
+    display: inline-block;
+  }
+}
+
+.features__img-desktop--editor {
+  top: -8.4rem;
+  right: -27.3rem;
+  width: 92.4rem;
+}
+
+.features__img-desktop--laptop {
+  top: -15.2rem;
+  left: -27.8rem;
+  width: 97.4rem;
+}
+
+// *******************
+// FEATURES SPEED
+// ********************
 
 .feature-speed {
   border-top-right-radius: 10rem;
@@ -51,6 +127,11 @@ $media--large-desktop: 100em;
   background-size: 100%;
   position: relative;
 
+  @media (min-width: $media--tablet-landscape) {
+    margin-top: 17.8rem;
+    margin-bottom: 26.5rem;
+  }
+
   .background--speed {
     background-image: url("../../images/bg-pattern-circles.svg");
     border-top-right-radius: 10rem;
@@ -61,11 +142,11 @@ $media--large-desktop: 100em;
     background-repeat: no-repeat;
 
     @media (min-width: $media--small-phones) {
-      background-position-y: -40rem;
-      background-size: 130%;
+      background-position-y: -50.5rem;
+      background-size: 70%;
+      background-position-x: -49%;
     }
   }
-
   .heading {
     color: var(--color-neutral-white);
     margin-top: 22.6rem;
@@ -74,9 +155,11 @@ $media--large-desktop: 100em;
     margin-left: 0;
     letter-spacing: -0.5px;
 
-    // @media (min-width: $media--tablet) {
-    //   margin-top: 11rem;
-    // }
+    @media (min-width: $media--tablet-landscape) {
+      margin-top: 11.6rem;
+      font-size: 3.8rem;
+      margin-bottom: 1.6rem;
+    }
   }
 
   .feature__text {
@@ -88,6 +171,17 @@ $media--large-desktop: 100em;
     padding-bottom: 11rem;
     margin-left: 0;
     letter-spacing: 0.5px;
+
+    @media (min-width: $media--tablet-landscape) {
+      padding: 0;
+    }
+  }
+
+  .feature {
+    @media (min-width: $media--tablet-landscape) {
+      transform: translateX(-0.5rem);
+      margin-bottom: 10.2rem;
+    }
   }
 }
 
@@ -104,15 +198,9 @@ $media--large-desktop: 100em;
   position: absolute;
   top: -30%;
 
-  // @media (min-width: $media--small-phones) {
-  //   width: 41rem;
-  //   top: -34%;
-  // }
-
-  // @media (min-width: $media--tablet) {
-  //   width: 52rem;
-  //   height: auto;
-  //   position: absolute;
-  //   top: auto;
-  // }
+  @media (min-width: $media--tablet-landscape) {
+    width: auto;
+    top: -7rem;
+    transform: translateX(-3.2rem);
+  }
 }
