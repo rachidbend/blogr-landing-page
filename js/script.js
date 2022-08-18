@@ -19,11 +19,24 @@ navTabLinkEls.forEach((link) => {
   link.addEventListener("click", (e) => {
     //  prevent link from refreshing page
     e.preventDefault();
-    resetDropdown();
-    const arrowEl = e.target.lastChild;
+
+    const arrowEls = e.target.children;
     const tab = e.target.nextElementSibling;
+
+    // if the dropdown is already open then close it
+
+    if (tab.classList.contains("tab-open")) {
+      tab.classList.remove("tab-open");
+      arrowEls[0].classList.remove("arrow-open");
+      arrowEls[1].classList.remove("arrow-open");
+      return;
+    }
+    // if the dropdown isn,'t already open then close the all and open that specific one
+    // to make sure only one dropdown opens at a time
+    resetDropdown();
     tab.classList.toggle("tab-open");
-    arrowEl.classList.toggle("arrow-open");
+    arrowEls[0].classList.toggle("arrow-open");
+    arrowEls[1].classList.toggle("arrow-open");
   });
 });
 
@@ -41,8 +54,6 @@ bodyEl.addEventListener("click", (e) => {
     resetDropdown();
   }
 });
-
-console.log(dropdowns);
 
 // if the nav is clicked keep the one clikced open but close the rest
 

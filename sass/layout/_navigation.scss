@@ -195,6 +195,7 @@ $media--large-desktop: 100em;
 .tab-open {
   display: flex;
   flex-direction: column;
+
   @media (min-width: $media--tablet-landscape) {
     position: absolute;
     top: 2rem;
