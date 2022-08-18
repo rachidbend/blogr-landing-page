@@ -14,11 +14,18 @@
   --color-neutral-background--footer: hsl(240, 10%, 16%);
 
   // Gradinats colors
-  --color-gradiant-red: linear-gradient(
+  --color-gradiant-red--mobile: linear-gradient(
     to bottom,
     rgba(255, 143, 112, 1),
     rgba(255, 61, 84, 1)
   );
+
+  --color-gradiant-red--desktop: linear-gradient(
+    to right,
+    rgba(255, 143, 112, 1) 10%,
+    rgba(255, 61, 84, 1) 64%
+  );
+
   --color-gradiant-blue: linear-gradient(
     to bottom,
     hsl(237, 17%, 21%),

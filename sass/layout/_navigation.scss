@@ -2,7 +2,7 @@ $media--small-phones: 28.75em;
 $media--large-phones: 44em;
 $media--tablet: 59em;
 $media--tablet-landscape: 75em;
-$media--tesktop: 1400px;
+$media--tesktop: 87.5em;
 $media--large-desktop: 100em;
 
 .nav {
@@ -12,6 +12,10 @@ $media--large-desktop: 100em;
   background: none;
   border: none;
   padding: 0;
+
+  @media (min-width: $media--tablet-landscape) {
+    display: none;
+  }
 }
 .btn-nav--open {
 }
@@ -54,6 +58,36 @@ $media--large-desktop: 100em;
     right: 2.7rem;
     left: auto;
   }
+
+  // styling of nav when in tablet landscape and larger
+  @media (min-width: $media--tablet-landscape) {
+    // showing nav
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    // reseting nav
+    position: relative;
+    top: auto;
+    right: auto;
+    left: auto;
+    background: none;
+    box-shadow: none;
+
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.6rem;
+  }
+
+  .nav__link:hover,
+  .nav__link:active {
+    @media (min-width: $media--tablet-landscape) {
+      color: var(--color-neutral-white);
+      margin-bottom: -1px;
+      border-bottom: 1px solid var(--color-neutral-white);
+    }
+  }
 }
 // when mobile nav is open
 .nav-open .nav--main {
@@ -62,22 +96,42 @@ $media--large-desktop: 100em;
   pointer-events: auto;
 }
 
+.lab__link--arrow--dark {
+  @media (min-width: $media--tablet-landscape) {
+    display: none;
+  }
+}
+.lab__link--arrow--light {
+  display: none;
+  @media (min-width: $media--tablet-landscape) {
+    display: inline-block;
+  }
+}
+
 .nav__list {
   list-style: none;
   display: flex;
   flex-direction: column;
   text-align: center;
   margin: 0 2.4rem;
-  // margin-bottom: 3rem;
+
   padding: 3.2rem 0;
   padding-bottom: 2.4rem;
-  // width: 100%;
+
   gap: 3rem;
 
   border-bottom: 1px solid rgba(31, 63, 91, 0.2);
 
   @media (min-width: $media--large-phones) {
     width: 36rem;
+  }
+
+  @media (min-width: $media--tablet-landscape) {
+    flex-direction: row;
+    border: none;
+    padding: 0;
+    padding-top: 1rem;
+    letter-spacing: 0.4px;
   }
 }
 .nav__link:link,
@@ -88,13 +142,24 @@ $media--large-desktop: 100em;
   align-items: center;
   justify-content: center;
   gap: 0.6rem;
-
+  font-family: var(--font-family-ubuntu);
   transition: color ease-out 300ms;
+
+  @media (min-width: $media--tablet-landscape) {
+    color: var(--color-neutral-white);
+    opacity: 0.8;
+  }
 }
 
 .nav__link:hover,
 .nav__link:active {
   color: var(--color-primary-link-hover);
+
+  // @media (min-width: $media--tablet-landscape) {
+  //   color: var(--color-neutral-white);
+  //   margin-bottom: -1px;
+  //   border-bottom: 1px solid var(--color-neutral-white);
+  // }
 }
 
 .nav__list--tab {
@@ -108,20 +173,77 @@ $media--large-desktop: 100em;
   flex-direction: column;
   border-radius: 0.4rem;
   gap: 2rem;
+
+  @media (min-width: $media--tablet-landscape) {
+    position: relative;
+    background-color: var(--color-neutral-white);
+    padding: 3.2rem 6.4rem 3rem 2.4rem;
+    box-shadow: 0 0.6rem 3rem rgba($color: hsl(240, 10%, 16%), $alpha: 0.36);
+    margin-top: 2.4rem;
+    gap: 1.6rem;
+  }
 }
 
 .arrow-open {
   transform: rotate(180deg);
 }
 
+.nav--main li {
+  position: relative;
+}
+
 .tab-open {
   display: flex;
   flex-direction: column;
+  @media (min-width: $media--tablet-landscape) {
+    position: absolute;
+    top: 2rem;
+    align-items: baseline;
+    left: -2.6rem;
+    animation: growOut 240ms ease-in-out forwards;
+    transform-origin: top center;
+  }
 }
 
-.nav__link--tab:link,
-.nav__link--tab:visited {
+//  scalse animation
+@keyframes growOut {
+  0% {
+    transform: scale(0);
+  }
+  80% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.nav--main .nav__link--tab:link,
+.nav--main .nav__link--tab:visited {
   color: var(--color-primary-link-hover);
+
+  @media (min-width: $media--tablet-landscape) {
+    font-family: var(--font-family-ubuntu);
+    transition: all ease-out 140ms;
+    border: none;
+    color: var(--color-neutral-background--footer);
+    opacity: 1;
+    font-weight: 400;
+    font-size: 1.5rem;
+    text-shadow: 0px 0px 1px #fff;
+  }
+}
+
+.nav--main .nav__link--tab:hover,
+.nav--main .nav__link--tab:active {
+  @media (min-width: $media--tablet-landscape) {
+    font-weight: 400;
+    border: none;
+    padding-bottom: 1px; // to fix the link getting smaller when its hovered
+    text-shadow: 0px 0px 1px var(--color-neutral-background--footer);
+    color: var(--color-neutral-background--footer);
+    opacity: 1;
+  }
 }
 
 // FOOTER NAV
@@ -170,9 +292,7 @@ $media--large-desktop: 100em;
     justify-content: center;
     align-items: center;
     background: none;
-
     margin-top: 0.4rem;
-
     gap: 1.2rem;
   }
 }

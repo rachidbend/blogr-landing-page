@@ -21,4 +21,9 @@ $media--large-desktop: 100em;
     margin: 0 auto;
     // padding: 0 4rem;
   }
+
+  @media (min-width: $media--tablet-landscape) {
+    max-width: 120rem;
+    padding-left: 4.7rem;
+  }
 }

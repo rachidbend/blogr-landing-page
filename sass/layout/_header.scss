@@ -1,3 +1,10 @@
+$media--small-phones: 28.75em;
+$media--large-phones: 44em;
+$media--tablet: 59em;
+$media--tablet-landscape: 75em;
+$media--tesktop: 1400px;
+$media--large-desktop: 100em;
+
 .header {
   padding: 5.6rem 0;
   position: relative;
@@ -9,6 +16,13 @@
 
   justify-content: space-between;
   flex-direction: row;
+
+  @media (min-width: $media--tablet-landscape) {
+    max-width: 120rem;
+    padding-left: 4.7rem;
+    gap: 0;
+    justify-content: space-between;
+  }
 }
 
 .logo {
@@ -16,4 +30,10 @@
 .logo img {
   height: 3.24rem;
   width: auto;
+
+  @media (min-width: $media--tablet-landscape) {
+    height: 4rem;
+    margin-top: 0.7rem;
+    margin-right: 4.1rem;
+  }
 }

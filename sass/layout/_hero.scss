@@ -1,3 +1,10 @@
+$media--small-phones: 28.75em;
+$media--large-phones: 44em;
+$media--tablet: 59em;
+$media--tablet-landscape: 75em;
+$media--tesktop: 1400px;
+$media--large-desktop: 100em;
+
 .section-hero {
   text-align: center;
   margin-top: 5.6rem;
@@ -9,6 +16,10 @@
     font-family: var(--font-family-overpass);
     opacity: 0.8;
     margin-bottom: 4.7rem;
+
+    @media (min-width: $media--tablet-landscape) {
+      font-size: 2rem;
+    }
   }
 
   &__links {

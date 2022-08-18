@@ -7,7 +7,7 @@ $media--large-desktop: 100em;
 
 .head {
   background-image: url(../../images/bg-pattern-intro-mobile.svg),
-    var(--color-gradiant-red);
+    var(--color-gradiant-red--mobile);
   border-bottom-left-radius: 10rem;
 
   background-position: 35.5% 33%;
@@ -15,6 +15,21 @@ $media--large-desktop: 100em;
 
   @media (min-width: $media--large-phones) {
     background-size: 200%;
+    background-position: 44.5% 39%;
+  }
+
+  @media (min-width: $media--tablet) {
+    background-image: url(../../images/bg-pattern-intro-mobile.svg),
+      var(--color-gradiant-red--desktop);
+    background-size: 200%;
+    background-position: 29.5% 49%;
+  }
+
+  @media (min-width: $media--tablet-landscape) {
+    background-image: url(../../images/bg-pattern-intro-desktop.svg),
+      var(--color-gradiant-red--desktop);
+    background-position: 25.2% 52.18%;
+    background-size: 220%;
   }
 
   .container {
