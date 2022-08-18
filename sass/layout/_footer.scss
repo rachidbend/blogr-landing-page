@@ -11,7 +11,12 @@ $media--large-desktop: 100em;
   color: var(--color-neutral-white);
   margin-top: 9.4rem;
   padding-bottom: 3.3rem;
-  padding-top: 8rem;
+  padding-top: 2rem;
+
+  @media (min-width: $media--tablet-landscape) {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
 
   .container {
     padding: 0 2.4rem;
@@ -22,7 +27,7 @@ $media--large-desktop: 100em;
     }
 
     @media (min-width: $media--tablet-landscape) {
-      max-width: 120rem;
+      max-width: 100rem;
     }
   }
 
@@ -53,24 +58,27 @@ $media--large-desktop: 100em;
 // FOOTER NAVIGATION
 // *****************
 .nav--footer {
-  .nav__list {
-    margin: 0;
-    padding-top: 0;
-    gap: 4rem;
-    width: auto;
-  }
-  .nav__link:link,
-  .nav__link:visited {
-    font-size: 1.4rem;
-  }
-  .nav__link--open:link,
-  .nav__link--open:visited {
-    justify-content: start;
-    margin-bottom: 3rem;
-  }
-  .nav__list--tab {
-    padding: 0;
-    margin-top: 0;
-    align-items: flex-start;
+  @media (min-width: $media--tablet-landscape) {
+    padding-left: 2rem;
+    .nav__list {
+      margin: 0;
+      padding-top: 0;
+      gap: 0rem;
+      width: auto;
+    }
+    .nav__link:link,
+    .nav__link:visited {
+      font-size: 1.5rem;
+    }
+    .nav__link--open:link,
+    .nav__link--open:visited {
+      justify-content: start;
+      margin-bottom: 3rem;
+    }
+    .nav__list--tab {
+      padding: 0;
+      margin-top: 0;
+      align-items: flex-start;
+    }
   }
 }
