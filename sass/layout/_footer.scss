@@ -11,6 +11,7 @@ $media--large-desktop: 100em;
   color: var(--color-neutral-white);
   margin-top: 9.4rem;
   padding-bottom: 3.3rem;
+  padding-top: 8rem;
 
   .container {
     padding: 0 2.4rem;
@@ -19,6 +20,10 @@ $media--large-desktop: 100em;
       margin: 0 auto;
       padding: 0 4rem;
     }
+
+    @media (min-width: $media--tablet-landscape) {
+      max-width: 120rem;
+    }
   }
 
   .logo {
@@ -26,9 +31,46 @@ $media--large-desktop: 100em;
     margin-top: 7.5rem;
     margin-bottom: 4.6rem;
 
+    @media (min-width: $media--tablet-landscape) {
+      margin-top: 0;
+      margin-bottom: 0;
+      text-align: left;
+    }
+
     img {
       height: 4rem;
       width: auto;
+
+      @media (min-width: $media--tablet-landscape) {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
     }
+  }
+}
+
+// *****************
+// FOOTER NAVIGATION
+// *****************
+.nav--footer {
+  .nav__list {
+    margin: 0;
+    padding-top: 0;
+    gap: 4rem;
+    width: auto;
+  }
+  .nav__link:link,
+  .nav__link:visited {
+    font-size: 1.4rem;
+  }
+  .nav__link--open:link,
+  .nav__link--open:visited {
+    justify-content: start;
+    margin-bottom: 3rem;
+  }
+  .nav__list--tab {
+    padding: 0;
+    margin-top: 0;
+    align-items: flex-start;
   }
 }

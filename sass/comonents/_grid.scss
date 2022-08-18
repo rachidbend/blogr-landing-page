@@ -24,6 +24,9 @@ $media--large-desktop: 100em;
   @media (min-width: $media--tablet) {
     grid-template-columns: 1fr 1fr 1fr;
   }
+  @media (min-width: $media--tablet-landscape) {
+    gap: 0rem;
+  }
 }
 
 .grid--footer {
