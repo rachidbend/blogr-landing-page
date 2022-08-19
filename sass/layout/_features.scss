@@ -18,12 +18,6 @@ html {
   text-align: center;
   position: relative;
 }
-// .section-features--first {
-//   @media (min-width: $media--tablet-landscape) {
-//     overflow-x: hidden;
-//     overflow-y: visible;
-//   }
-// }
 
 .section-features--second {
   @media (min-width: $media--tablet-landscape) {
@@ -36,21 +30,21 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.features__img img {
-  width: auto;
-  height: 100%;
-  margin: 0 auto;
-  // transform: translateX(-40px);
+
+  img {
+    width: auto;
+    height: 100%;
+    margin: 0 auto;
+  }
 }
 
 .feature {
   &__text {
     font-family: var(--font-family-overpass);
-    font-weight: 300;
     font-size: 1.7rem;
-    color: var(--color-neutral-body-copy);
+    font-weight: 300;
     line-height: 1.64;
+    color: var(--color-neutral-body-copy);
     margin-left: 0.4rem;
 
     @media (min-width: $media--tablet-landscape) {

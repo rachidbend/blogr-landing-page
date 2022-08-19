@@ -7,12 +7,12 @@ $media--large-desktop: 100em;
 
 .btn:link,
 .btn:visited {
-  text-decoration: none;
   display: inline-block;
   font-family: var(--font-family-ubuntu);
+  font-size: 1.6rem;
+  text-decoration: none;
   font-weight: 700;
   border-radius: 10rem;
-  font-size: 1.6rem;
   padding: 1.4rem 1.6rem;
 
   transition: all ease-out 300ms;
@@ -22,8 +22,8 @@ $media--large-desktop: 100em;
 .btn--free:visited {
   color: var(--color-primary-cta);
   background-color: var(--color-neutral-white);
-  margin-right: 1.6rem;
   border: 1px solid var(--color-neutral-white);
+  margin-right: 1.6rem;
 }
 
 .btn--free:hover,
@@ -35,8 +35,8 @@ $media--large-desktop: 100em;
 
 .btn--learn:link,
 .btn--learn:visited {
-  border: 1px solid var(--color-neutral-white);
   color: var(--color-neutral-white);
+  border: 1px solid var(--color-neutral-white);
   padding: 1.4rem 2.4rem;
 }
 
@@ -47,13 +47,12 @@ $media--large-desktop: 100em;
 }
 
 .nav__login {
-  margin-top: 2rem;
-  margin-bottom: 3.2rem;
   display: flex;
   align-items: center;
-  gap: 0.6rem;
   flex-direction: column;
+  gap: 0.6rem;
   font-family: var(--font-family-overpass);
+  margin: 2rem 0 3.2rem 0;
 
   @media (min-width: $media--tablet-landscape) {
     margin: 0;
@@ -63,17 +62,17 @@ $media--large-desktop: 100em;
 
 .btn--login:link,
 .btn--login:visited {
-  font-size: 1.8rem;
   font-family: var(--font-family-ubuntu);
+  font-size: 1.8rem;
   color: var(--color-primary-link);
 
   transition: color ease-out 300ms;
 
   @media (min-width: $media--tablet-landscape) {
+    font-family: var(--font-family-ubuntu);
+    font-size: 1.6rem;
     color: var(--color-neutral-white);
     opacity: 0.8;
-    font-size: 1.6rem;
-    font-family: var(--font-family-ubuntu);
     margin-right: 1rem;
     transform: translateY(7%);
   }
@@ -97,21 +96,21 @@ $media--large-desktop: 100em;
   outline: 1px solid transparent;
   outline-offset: -1px;
   @media (min-width: $media--tablet-landscape) {
+    color: var(--color-primary-cta);
     background-image: none;
     background-color: var(--color-neutral-white);
-    color: var(--color-primary-cta);
   }
 }
 
 .btn--sign:hover,
 .btn--sign:active {
+  color: var(--color-primary-cta);
   outline: 1px solid var(--color-primary-cta);
   background-image: linear-gradient(to right, #fff, #fff);
-  color: var(--color-primary-cta);
 
   @media (min-width: $media--tablet-landscape) {
+    color: var(--color-neutral-white);
     background-image: none;
     background-color: var(--color-primary-cta--hover);
-    color: var(--color-neutral-white);
   }
 }
