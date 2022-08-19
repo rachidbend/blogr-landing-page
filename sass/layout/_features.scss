@@ -147,10 +147,29 @@ html {
     background-repeat: no-repeat;
 
     @media (min-width: $media--small-phones) {
+      background-position-y: -31.5rem;
+      background-size: 121%;
+      background-position-x: 49%;
+    }
+
+    @media (min-width: $media--large-phones) {
+      background-position-y: -50.5rem;
+      background-size: 111%;
+      background-position-x: 49%;
+    }
+
+    @media (min-width: $media--tablet) {
+      background-position-y: -51.5rem;
+      background-size: 88%;
+      background-position-x: 49%;
+    }
+
+    @media (min-width: $media--tablet-landscape) {
       background-position-y: -50.5rem;
       background-size: 70%;
       background-position-x: -49%;
     }
+
     @media (min-width: $media--large-desktop) {
       background-position-y: -53.5rem;
       background-size: 63%;

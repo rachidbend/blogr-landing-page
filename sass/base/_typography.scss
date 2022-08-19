@@ -1,11 +1,7 @@
-// font-family: 'Overpass', sans-serif;
-// font-family: 'Ubuntu', sans-serif;
-
 $media--small-phones: 28.75em;
 $media--large-phones: 44em;
 $media--tablet: 59em;
 $media--tablet-landscape: 75em;
-$media--tesktop: 1400px;
 $media--large-desktop: 100em;
 
 :root {
@@ -16,6 +12,7 @@ $media--large-desktop: 100em;
 }
 
 html {
+  // 1rem = 10px | 10/16 = 0.625%
   font-size: 62.5%;
 }
 
@@ -26,8 +23,8 @@ html {
 }
 
 .heading--primary {
-  color: var(--color-neutral-white);
   font-size: 3.6rem;
+  color: var(--color-neutral-white);
   margin-bottom: 1.4rem;
 
   @media (min-width: $media--large-phones) {
@@ -42,36 +39,35 @@ html {
     font-size: 6.2rem;
     padding-top: 1.8rem;
   }
-}
 
-.heading--primary br {
-  @media (min-width: $media--tablet-landscape) {
-    display: none;
+  & br {
+    @media (min-width: $media--tablet-landscape) {
+      display: none;
+    }
   }
 }
 
 .heading--secondary {
-  color: var(--color-primary-headings);
   font-size: 2.8rem;
-  margin-top: 10.4rem;
   letter-spacing: -1.1px;
   font-weight: 600;
+  color: var(--color-primary-headings);
+  margin-top: 10.4rem;
   margin-bottom: 4.4rem;
 
-  // 15.4rem
   @media (min-width: $media--tablet-landscape) {
-    margin-top: 15.5rem;
     font-size: 4rem;
     letter-spacing: -1.5px;
+    margin-top: 15.5rem;
   }
 }
 
 .heading--tertiary {
-  color: var(--color-primary-headings);
   font-size: 2.8rem;
-  margin-top: 5.1rem;
-  line-height: 1.14;
   letter-spacing: -0.2px;
+  line-height: 1.14;
+  color: var(--color-primary-headings);
+  margin-top: 5.1rem;
   margin-bottom: 1.5rem;
   margin-left: 1rem;
 
