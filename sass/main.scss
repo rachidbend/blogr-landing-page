@@ -30,7 +30,6 @@ $media--small-phones: 28.75em;
 $media--large-phones: 44em;
 $media--tablet: 59em;
 $media--tablet-landscape: 75em;
-$media--tesktop: 1400px;
 $media--large-desktop: 100em;
 
 /*
@@ -51,11 +50,6 @@ $media--large-desktop: 100em;
 
 
   @media(min-width: $media--tablet-landscape) {
-  
- }
-
-
-  @media(min-width: $media--tesktop) {
   
  }
 

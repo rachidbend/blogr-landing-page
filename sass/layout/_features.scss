@@ -4,6 +4,7 @@ $media--tablet: 59em;
 $media--tablet-landscape: 75em;
 $media--tesktop: 1400px;
 $media--large-desktop: 100em;
+$media--very-large-desktop: 115em;
 
 // fixing feature image making body too wide
 html {
@@ -106,6 +107,10 @@ html {
   top: -15.2rem;
   left: -27.8rem;
   width: 97.4rem;
+
+  @media (min-width: $media--large-desktop) {
+    left: -27.1rem;
+  }
 }
 
 // *******************
@@ -145,6 +150,17 @@ html {
       background-position-y: -50.5rem;
       background-size: 70%;
       background-position-x: -49%;
+    }
+    @media (min-width: $media--large-desktop) {
+      background-position-y: -53.5rem;
+      background-size: 63%;
+      background-position-x: -38%;
+    }
+
+    @media (min-width: $media--very-large-desktop) {
+      background-position-y: -56.5rem;
+      background-size: 57%;
+      background-position-x: -28%;
     }
   }
   .heading {
@@ -202,5 +218,8 @@ html {
     width: auto;
     top: -7rem;
     transform: translateX(-3.2rem);
+  }
+  @media (min-width: $media--large-desktop) {
+    transform: translateX(-10.2rem);
   }
 }

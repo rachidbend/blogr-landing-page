@@ -29,6 +29,9 @@ $media--large-desktop: 100em;
     @media (min-width: $media--tablet-landscape) {
       max-width: 120rem;
     }
+    @media (min-width: $media--large-desktop) {
+      max-width: 150rem;
+    }
   }
 
   .logo {
